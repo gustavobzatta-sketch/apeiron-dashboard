@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OT Cybersecurity Punch Dashboard — Apeiron Engineering</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --green:       #6ABF4B;
+    --green-dark:  #4e9934;
+    --green-light: #8dd670;
+    --green-dim:   rgba(106,191,75,0.10);
+    --green-border:rgba(106,191,75,0.30);
+    --bg:          #f7f9f6;
+    --bg-card:     #ffffff;
+    --border:      #e3eade;
+    --ink:         #1a1a1a;
+    --ink-mid:     #3d4a3a;
+    --ink-muted:   #7a8f74;
+    --ink-faint:   #b3c4ac;
+    --danger:      #d63c3c;
+    --danger-dim:  rgba(214,60,60,0.08);
+    --warn:        #e8880a;
+    --shadow:      0 2px 12px rgba(26,26,26,0.07);
+    --shadow-lg:   0 6px 32px rgba(26,26,26,0.11);
+    --radius:      10px;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+  }
+
+  /* HEADER */
+  header {
+    background: #1a1a1a;
+    position: relative;
+    overflow: hidden;
+  }
+  .header-stripe {
+    height: 4px;
+    background: linear-gradient(90deg, var(--green-dark), var(--green), var(--green-light));
+  }
+  .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 20px;
+  }
+  .logo-block {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    flex-shrink: 0;
+  }
+  .logo-block img {
+    height: 38px;
+    width: auto;
+    filter: none;
+    background: white;
+    border-radius: 6px;
+    padding: 4px 8px;
+  }
